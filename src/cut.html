@@ -1,0 +1,27 @@
+import React, { useEffect, useState } from "react";
+
+import { ref } from "firebase/storage";
+import storage from "../Firebase/Firebase";
+
+import { listAll } from "../Firebase/Firebase";
+
+const storage = getStorage();
+
+const storageRef = ref(storage, "result/"); // Reference to the root of your storage
+console.log(storageRef);
+
+// var storageRef = firebase.storage().ref("result");
+
+// Get a list of all items (PDFs) in the folder
+
+function Result() {
+  return (
+    <>
+      <div className="container">
+        <div id="noticeTableBody"></div>
+      </div>
+    </>
+  );
+}
+
+export default Result;
