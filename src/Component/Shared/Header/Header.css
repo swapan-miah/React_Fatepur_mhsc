@@ -1,0 +1,137 @@
+.bg-custom {
+  background-color: var(--main-bg-color);
+  margin-bottom: 15px;
+}
+.logu-left {
+  /* float: left; */
+  /* width: 15%; */
+}
+.logu-left-content img {
+  /* float: right; */
+  margin-top: 26px;
+  height: 140px;
+  width: 140px;
+}
+.mainheader-content h1 {
+  /* font-family: "Abril Fatface", cursive; */
+  font-family: "Brawler", serif;
+  font-size: 63px; /* Website Header  h1 Text Size Change   */
+  text-align: center;
+  margin-bottom: 15px;
+  color: var(--main-text-color); /* Website Header  h1 Text Color Change   */
+  letter-spacing: 3px;
+}
+.mainheader-content p {
+  font-family: "Brawler", serif;
+  text-align: center;
+  margin-top: 0px;
+  font-size: 35px; /* Website Header  p Text Size Change   */
+  color: var(--main-text-color); /* Website Header  h1 Text Color Change   */
+}
+.logu-right {
+  /* float: right; */
+  /* width: 15%; */
+  /* background: #ccc; */
+}
+.logu-right-content img {
+  height: 140px;
+  width: 140px;
+  margin-top: 10px;
+}
+@media screen and (max-width: 400px) {
+  .mainheader-content h1 {
+    font-size: 18px;
+  }
+  .mainheader-content p {
+    font-size: 15px !important;
+    line-height: 21px !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* Header section start  */
+  .logu-left {
+    display: none;
+  }
+  .logu-left-content img {
+    float: right;
+    margin-top: 10px;
+    height: 80px;
+    width: 80px;
+  }
+  .mainheader-content h1 {
+    font-size: 21px; /* Responsive  Website Header  h1 Text Size Change   */
+    text-align: center;
+    /* *background: green; */
+    letter-spacing: 1.2px;
+  }
+  .mainheader-content p {
+    text-align: center;
+    line-height: 1;
+    margin-top: -5px;
+    font-size: 16px; /* Responsive  Website Header  P Text Size Change   */
+    letter-spacing: 1.2px;
+    margin-bottom: 6px;
+  }
+
+  /* Header section end  */
+}
+@media screen and (min-width: 768px) {
+  /* Header section start  */
+  .mainheader-content h1 {
+    font-size: 20px; /* Responsive  Website Header  h1 Text Size Change   */
+    text-align: center;
+    /* *background: green; */
+    letter-spacing: normal;
+  }
+  .mainheader-content p {
+    text-align: center;
+    line-height: 1;
+    margin-top: -5px;
+    font-size: 17px; /* Responsive  Website Header  P Text Size Change   */
+  }
+  .logu-left {
+    display: inline-block;
+  }
+  .logu-left-content img {
+    /* float: right; */
+    margin-top: 14px !important;
+    margin-left: 3px !important;
+  }
+  .logu-right-content img {
+    position: relative;
+    top: -11px;
+    right: 40px;
+  }
+  /* Header section end  */
+}
+@media screen and (min-width: 992px) {
+  /* Header section start  */
+  .mainheader-content h1 {
+    font-size: 22px; /* Responsive  Website Header  h1 Text Size Change   */
+    letter-spacing: 1.3px;
+    font-weight: 900;
+  }
+  .mainheader-content p {
+    line-height: 1;
+    font-size: 19px; /* Responsive  Website Header  P Text Size Change   */
+  }
+  .logu-right-content img {
+    position: relative;
+    left: 0px;
+    top: -7px;
+  }
+  /* Header section end  */
+}
+@media screen and (min-width: 1200px) {
+  .mainheader-content h1 {
+    font-size: 27px; /* Responsive  Website Header  h1 Text Size Change   */
+    letter-spacing: 1.3px;
+    font-weight: 900;
+  }
+  .mainheader-content p {
+    text-align: center;
+    margin-top: -5px;
+    font-size: 21px; /* Responsive  Website Header  P Text Size Change   */
+    letter-spacing: 2px;
+  }
+}

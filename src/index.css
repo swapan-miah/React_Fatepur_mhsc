@@ -1,0 +1,14 @@
+/* font inport start */
+/* english font  */
+@import url("https://fonts.googleapis.com/css2?family=Brawler:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Brawler:wght@400;700&display=swap");
+/* font inport end */
+
+:root {
+  --main-bg-color: #092a4e;
+  --main-text-color: rgb(255, 255, 255);
+}
+html,
+body {
+  overflow-x: hidden !important;
+}

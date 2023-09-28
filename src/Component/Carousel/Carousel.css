@@ -1,0 +1,19 @@
+.prev_icon,
+.next_icon {
+}
+
+.prev_icon {
+  top: 50%;
+  transform: translate(-50%);
+}
+.next_icon {
+  top: 50%;
+  right: 0;
+  transform: translate(-50%);
+}
+.carousel_border {
+  border: 1px solid white;
+}
+.carousl_img {
+  transition-duration: 0.5s;
+}

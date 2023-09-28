@@ -1,0 +1,45 @@
+/* mainSection start  */
+/* main Left Section Start */
+.panel {
+  border: 1px solid #ffffff; /* Panel  Border color Change */
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: -1px -1px 9px 6px rgba(255, 255, 255, 0.75);
+  -webkit-box-shadow: -1px -1px 9px 6px rgba(255, 255, 255, 0.75);
+  -moz-box-shadow: -1px -1px 9px 6px rgba(255, 255, 255, 0.75);
+}
+.panel:hover {
+  border: 1px solid var(--main-bg-color); /* Panel  Border color Change */
+  box-shadow: 5px 10px 9px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 5px 10px 9px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 10px 9px 0px rgba(0, 0, 0, 0.75);
+}
+/* Panel Heading */
+.panel-heading-color {
+  background-color: var(
+    --main-bg-color
+  ); /* Panel Heading  Bacground color Change */
+  padding: 12px;
+  font-size: 18px;
+  color: var(--main-text-color); /* Panel Heading  Text color Change */
+}
+/* More Section start */
+#more1 {
+  display: none;
+}
+#more2 {
+  display: none;
+}
+/* More Section end */
+/* End more Section */
+/* main Left Section end */
+/* main Right section start  */
+.headTeacher_Home_img,
+.chairman_Home_img {
+  display: block;
+  width: auto;
+  height: 340px;
+  margin: auto;
+}
+/* main Right section end  */
+/* mainSection end  */

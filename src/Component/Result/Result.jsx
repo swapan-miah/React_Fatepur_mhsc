@@ -1,0 +1,80 @@
+import firebase from "firebase/app";
+import "firebase/storage";
+
+// Initialize Firebase (make sure you've configured Firebase properly)
+const firebaseConfig = {
+  apiKey: "AIzaSyAVC8FkPtepahw046SbVAEdIqSa0x8SY-0",
+  authDomain: "amphs-f9aae.firebaseapp.com",
+  databaseURL:
+    "https://amphs-f9aae-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "amphs-f9aae",
+  storageBucket: "amphs-f9aae.appspot.com",
+  messagingSenderId: "116747605866",
+  appId: "1:116747605866:web:2576e5eeb46ce2b464f713",
+  measurementId: "G-5MRXZSRPK2",
+};
+
+firebase.initializeApp(firebaseConfig);
+
+const storage = firebase.storage();
+const storageRef = storage.ref("result"); // Reference to the root of your storage
+
+// Fetch a list of items from Firebase Storage
+async function fetchPDFFiles() {
+  try {
+    const files = await storageRef.listAll();
+    return files.items.map(async (fileRef) => {
+      const url = await fileRef.getDownloadURL();
+      const name = fileRef.name;
+      return { name, url };
+    });
+  } catch (error) {
+    console.error("Error fetching files:", error);
+    return [];
+  }
+}
+
+// --------------firebase Config End
+
+import React, { useEffect, useState } from "react";
+
+function Result() {
+  const [pdfFiles, setPDFFiles] = useState([]);
+
+  useEffect(() => {
+    async function loadPDFFiles() {
+      const files = await fetchPDFFiles();
+      setPDFFiles(files);
+    }
+    loadPDFFiles();
+  }, []);
+
+  return (
+    <div>
+      <table>
+        <thead>
+          <tr>
+            <th>Auto Number</th>
+            <th>File Name Without Extension</th>
+            <th>PDF Download URL</th>
+          </tr>
+        </thead>
+        <tbody>
+          {pdfFiles.map((file, index) => (
+            <tr key={index}>
+              <td>{index + 1}</td>
+              <td>{file.name.replace(/\.[^/.]+$/, "")}</td>
+              <td>
+                <a href={file.url} target="_blank" rel="noopener noreferrer">
+                  Download
+                </a>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
+export default Result;
