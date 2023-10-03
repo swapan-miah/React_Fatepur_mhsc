@@ -4,6 +4,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Brawler:wght@400;700&display=swap");
 /* font inport end */
 
+/* font Awesome */
+@import "font-awesome/css/font-awesome.min.css";
 :root {
   --main-bg-color: #092a4e;
   --main-text-color: rgb(255, 255, 255);

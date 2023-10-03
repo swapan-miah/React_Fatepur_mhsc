@@ -18,7 +18,7 @@ function Nav() {
   }
   return (
     <>
-      <div className="container rounded-4">
+      <div className="container p-0 rounded-4">
         <div className="navpadding rounded-4 ">
           <div className="topnav rounded-4" id="myTopnav">
             <a href="./index.html" className="active_home">

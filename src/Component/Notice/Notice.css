@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #8d767637;
+}
+.bg-custom {
+  background-color: #000080;
+  border-radius: 8px 8px 0px 0px;
+}
+.pdf_Table_section {
+  /* border: 1px solid black; */
+  /* height: 500px; */
+  overflow-y: auto;
+  background: white;
+  /* border-radius: 16px; */
+}
+
+/* CSS for a table with rounded corners */
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  /* border-radius: 16px 16px 0 0; Adjust the radius as needed */
+  overflow: hidden; /* Ensures the border-radius is applied */
+}
+
+/* Style for table cells (optional) */
+td,
+th {
+  /* padding: 10px; */
+  border: 1px solid #000; /* Add your desired border style here */
+}
+/* Style the table header */
+
+/* Style the table rows */
+tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Style the table cells */
+th,
+td {
+  padding: 5px;
+  /* border: 1px solid #070707; */
+}
+
+/* Hover effect on rows */
+tr:hover {
+  background-color: #026d0f;
+  color: yellow;
+}
+tr:hover td:nth-child(4) a {
+  background-color: #026d0f;
+  color: white;
+}
+/* X-Small devices (portrait phones, less than 576px)*/
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (max-width: 575px) {
+  table {
+    font-size: 0.7rem !important;
+  }
+  td:nth-child(1) {
+    width: 5%;
+  }
+  td:nth-child(2) {
+    width: 25%;
+  }
+  td:nth-child(3) {
+    width: 65%;
+  }
+  td:nth-child(4) {
+    width: 5%;
+    text-decoration: none !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  table {
+    font-size: 1rem !important;
+  }
+  td:nth-child(1) {
+    width: 5%;
+    text-align: center;
+  }
+  td:nth-child(2) {
+    width: 10%;
+  }
+  td:nth-child(3) {
+    width: 75%;
+  }
+  td:nth-child(4) {
+    width: 10%;
+    text-align: center;
+    /* text-decoration: none !important; */
+  }
+}
+
+/* -----------loading date ----------- */
+/* Loading Animation */
+.loading-animation {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.5rem;
+  color: #000080;
+  animation: loading 3s infinite; /* Use any animation duration you prefer */
+}
+
+@keyframes loading {
+  0% {
+    content: "Loading Data ... 4s";
+    color: green;
+  }
+  33% {
+    content: "Loading Data ... 3s";
+    color: green;
+  }
+  66% {
+    content: "Loading Data... 2s";
+    color: green;
+  }
+  100% {
+    content: "Loading Data... 1s";
+    color: green;
+  }
+}
