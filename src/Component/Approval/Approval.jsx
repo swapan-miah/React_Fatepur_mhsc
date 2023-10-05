@@ -3,14 +3,14 @@ import { ref, listAll, getDownloadURL } from "firebase/storage";
 import storage from "../Firebase/Firebase";
 import "../CSS_For_All_Pdf_Component/pdf.css";
 
-function Notice() {
+function Approval() {
   const [pdfFiles, setPdfFiles] = useState([]);
   const [isLoading, setIsLoading] = useState(true); // State variable for loading
   const [loadingPercentage, setLoadingPercentage] = useState(0); // State variable for loading percentage
 
   useEffect(() => {
     // Reference to the "notice" folder in Firebase Storage
-    const storageRef = ref(storage, "/Notice/");
+    const storageRef = ref(storage, "/Approval/");
 
     // List all items (PDFs) in the folder
     listAll(storageRef)
@@ -57,7 +57,7 @@ function Notice() {
   return (
     <div className="container p-0 pb-4 rounded-4 my-3 bg-white ">
       <div className="bg-custom py-3 text-white text-center pdf_section_title">
-        ফতেপুর ময়নাল হক স্কুল এন্ড কলেজের সকল নোটিশ
+        ফতেপুর ময়নাল হক স্কুল এন্ড কলেজের অনুমতি ও স্বীকৃতির তথ্য
       </div>
       {isLoading ? ( // Conditional rendering based on loading state
         <div className="loading-animation">
@@ -96,4 +96,4 @@ function Notice() {
   );
 }
 
-export default Notice;
+export default Approval;

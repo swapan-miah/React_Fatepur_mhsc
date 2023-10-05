@@ -26,20 +26,20 @@ function Nav() {
               <FaHouseChimney className=" text-white  me-2 "></FaHouseChimney>
               হোম
             </NavLink>
-            <NavLink to="./schoolIntro.html"> স্কুল পরিচিতি </NavLink>
-            <NavLink to="./teachers.html">শিক্ষক-কর্মচারীর তথ্য </NavLink>
-            <NavLink to="./studentInformation.html">শিক্ষার্থীর তথ্য </NavLink>
-            <NavLink to="./syllabuses.html">সিলেবাস</NavLink>
-            <NavLink to="./routine.html">রুটিন</NavLink>
+            <NavLink to="/school-intro"> স্কুল পরিচিতি </NavLink>
+            <NavLink to="/teachers-worker">শিক্ষক-কর্মচারীর তথ্য </NavLink>
+            <NavLink to="/student-info">শিক্ষার্থীর তথ্য </NavLink>
+            <NavLink to="/syllabus">সিলেবাস</NavLink>
+            <NavLink to="/routine">রুটিন</NavLink>
             <NavLink to="/notice">নোটিশ</NavLink>
             <NavLink to="/result">রেজাল্ট</NavLink>
-            <NavLink to="./Commity.html">কমিটি</NavLink>
-            <NavLink to="./ssc_result.html">
-              বিগত এস এস সি বোর্ড পরীক্ষার ফল{" "}
+            <NavLink to="/Committee">কমিটি</NavLink>
+            <NavLink to="/ssc-board-result">
+              বিগত এস এস সি বোর্ড পরীক্ষার ফল
             </NavLink>
-            <NavLink to="./bitti.html">বৃত্তি , উপ-বৃত্তি </NavLink>
-            <NavLink to="./best_student.html">কৃতি শিক্ষার্থী </NavLink>
-            <NavLink to="./Approval.html"> অনুমোদন ও স্বীকৃতি</NavLink>
+            <NavLink to="/scholarship">বৃত্তি , উপ-বৃত্তি </NavLink>
+            <NavLink to="/meritorious-student">কৃতি শিক্ষার্থী </NavLink>
+            <NavLink to="/approval"> অনুমোদন ও স্বীকৃতি</NavLink>
             <div className="dropdown1">
               <button className="dropbtn">
                 গ্যালারি
@@ -80,7 +80,7 @@ function Nav() {
                 <NavLink to="./index.html">অবদান</NavLink>
                 <NavLink to="./index.html">ম্যাগাজিন</NavLink>
                 <NavLink to="./index.html"> রক্ত দান</NavLink>
-                <NavLink to="">এমপিও ও জাতীয়করনের তথ্য</NavLink>
+                <NavLink to="/mpo">এমপিও ও জাতীয়করনের তথ্য</NavLink>
               </div>
             </div>
             <NavLink
