@@ -10,7 +10,7 @@ function Notice() {
 
   useEffect(() => {
     // Reference to the "notice" folder in Firebase Storage
-    const storageRef = ref(storage, "/syllabuses/");
+    const storageRef = ref(storage, "/notice/");
 
     // List all items (PDFs) in the folder
     listAll(storageRef)
@@ -55,14 +55,12 @@ function Notice() {
   }, []);
 
   return (
-    <div className="container p-0 pb-4 rounded-4 my-4 bg-white ">
-      <div className="bg-custom py-3 text-white text-center fs-6">
-        {" "}
+    <div className="container p-0 pb-4 rounded-4 my-3 bg-white ">
+      <div className="bg-custom py-3 text-white text-center pdf_section_title">
         ফতেপুর ময়নাল হক স্কুল এন্ড কলেজের সকল নোটিশ
       </div>
       {isLoading ? ( // Conditional rendering based on loading state
         <div className="loading-animation">
-          {" "}
           Loading Data... {loadingPercentage.toFixed(2)}%
         </div>
       ) : (

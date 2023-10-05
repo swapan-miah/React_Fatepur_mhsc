@@ -17,6 +17,9 @@ body {
   background: white;
   /* border-radius: 16px; */
 }
+.pdf_section_title {
+  font-size: 16px;
+}
 
 /* CSS for a table with rounded corners */
 table {
@@ -64,6 +67,9 @@ tr:hover td:nth-child(4) a {
 /* Small devices (landscape phones, 576px and up) */
 
 @media (max-width: 575px) {
+  .pdf_section_title {
+    font-size: 12px;
+  }
   table {
     font-size: 0.7rem !important;
   }

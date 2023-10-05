@@ -5,6 +5,7 @@ import { FaFacebook } from "react-icons/fa6";
 import { FaHouseChimney } from "react-icons/fa6";
 import { BsHouseFill } from "react-icons/bs";
 import { BsCaretDownFill } from "react-icons/bs";
+import { Link, NavLink } from "react-router-dom";
 
 function Nav() {
   function myFunction() {
@@ -21,22 +22,24 @@ function Nav() {
       <div className="container p-0 rounded-4">
         <div className="navpadding rounded-4 ">
           <div className="topnav rounded-4" id="myTopnav">
-            <a href="./index.html" className="active_home">
+            <NavLink to="/" className="active_home">
               <FaHouseChimney className=" text-white  me-2 "></FaHouseChimney>
               হোম
-            </a>
-            <a href="./schoolIntro.html"> স্কুল পরিচিতি </a>
-            <a href="./teachers.html">শিক্ষক-কর্মচারীর তথ্য </a>
-            <a href="./studentInformation.html">শিক্ষার্থীর তথ্য </a>
-            <a href="./syllabuses.html">সিলেবাস</a>
-            <a href="./routine.html">রুটিন</a>
-            <a href="./notice.html"> নোটিশ </a>
-            <a href="./result.html">রেজাল্ট </a>
-            <a href="./Commity.html">কমিটি</a>
-            <a href="./ssc_result.html">বিগত এস এস সি বোর্ড পরীক্ষার ফল </a>
-            <a href="./bitti.html">বৃত্তি , উপ-বৃত্তি </a>
-            <a href="./best_student.html">কৃতি শিক্ষার্থী </a>
-            <a href="./Approval.html"> অনুমোদন ও স্বীকৃতি</a>
+            </NavLink>
+            <NavLink to="./schoolIntro.html"> স্কুল পরিচিতি </NavLink>
+            <NavLink to="./teachers.html">শিক্ষক-কর্মচারীর তথ্য </NavLink>
+            <NavLink to="./studentInformation.html">শিক্ষার্থীর তথ্য </NavLink>
+            <NavLink to="./syllabuses.html">সিলেবাস</NavLink>
+            <NavLink to="./routine.html">রুটিন</NavLink>
+            <NavLink to="/notice">নোটিশ</NavLink>
+            <NavLink to="/result">রেজাল্ট</NavLink>
+            <NavLink to="./Commity.html">কমিটি</NavLink>
+            <NavLink to="./ssc_result.html">
+              বিগত এস এস সি বোর্ড পরীক্ষার ফল{" "}
+            </NavLink>
+            <NavLink to="./bitti.html">বৃত্তি , উপ-বৃত্তি </NavLink>
+            <NavLink to="./best_student.html">কৃতি শিক্ষার্থী </NavLink>
+            <NavLink to="./Approval.html"> অনুমোদন ও স্বীকৃতি</NavLink>
             <div className="dropdown1">
               <button className="dropbtn">
                 গ্যালারি
@@ -46,8 +49,8 @@ function Nav() {
                 ></BsCaretDownFill>
               </button>
               <div className="dropdown-content">
-                <a href="./galary_img.html">ইমেজ </a>
-                <a href="./video_galary.html">ভিডিও </a>
+                <NavLink to="./galary_img.html">ইমেজ </NavLink>
+                <NavLink to="./video_galary.html">ভিডিও </NavLink>
               </div>
             </div>
             <div className="dropdown1">
@@ -59,9 +62,9 @@ function Nav() {
                 ></BsCaretDownFill>
               </button>
               <div className="dropdown-content">
-                <a href="./Suborno_Speak.html">বার্তা </a>
-                <a href="./Suborn_img.html">ছবি গ্যালারি</a>
-                <a href="./Suborno_video.html">ভিডিও</a>
+                <NavLink to="./Suborno_Speak.html">বার্তা </NavLink>
+                <NavLink to="./Suborn_img.html">ছবি গ্যালারি</NavLink>
+                <NavLink to="./Suborno_video.html">ভিডিও</NavLink>
               </div>
             </div>
 
@@ -74,20 +77,20 @@ function Nav() {
                 ></BsCaretDownFill>
               </button>
               <div className="dropdown-content">
-                <a href="./index.html">অবদান</a>
-                <a href="./index.html">ম্যাগাজিন</a>
-                <a href="./index.html"> রক্ত দান</a>
-                <a href="">এমপিও ও জাতীয়করনের তথ্য</a>
+                <NavLink to="./index.html">অবদান</NavLink>
+                <NavLink to="./index.html">ম্যাগাজিন</NavLink>
+                <NavLink to="./index.html"> রক্ত দান</NavLink>
+                <NavLink to="">এমপিও ও জাতীয়করনের তথ্য</NavLink>
               </div>
             </div>
-            <a
-              href=""
+            <NavLink
+              to=""
               style={{ fontSize: "15px" }}
               className="icon"
               onClick={myFunction}
             >
               &#9776;
-            </a>
+            </NavLink>
           </div>
         </div>
       </div>
