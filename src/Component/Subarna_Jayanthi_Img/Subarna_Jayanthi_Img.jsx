@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { ref, listAll, getDownloadURL } from "firebase/storage";
 import storage from "../Firebase/Firebase";
-import "./SSC_Board_Result.css";
+import "./Subarna_Jayanthi_Img.css";
 
-function SSC_Board_Result() {
+function Img_Gallary() {
   const [imageURLs, setImageURLs] = useState([]);
   const [loading, setLoading] = useState(true);
   const [loadingPercentage, setLoadingPercentage] = useState(0); // Add a loading percentage state
 
   useEffect(() => {
     // Reference the "ssc" folder in Firebase Storage
-    const storageRef = ref(storage, "/SSC_Board_Result/");
+    const storageRef = ref(storage, "/Img_Gallary/");
 
     // Function to get download URLs for images in the folder
     const getImageURLs = async () => {
@@ -37,7 +37,7 @@ function SSC_Board_Result() {
   }, []);
 
   return (
-    <>
+    <div className="container mt-3">
       {loading ? (
         <div>
           <p className="fs-4 text-center bg-primary my-5 mx-auto text-white loading-animation">
@@ -46,19 +46,21 @@ function SSC_Board_Result() {
           {/* Display loading percentage */}
         </div>
       ) : (
-        <div className="image-container">
+        <div className="row">
           {imageURLs.map((url, index) => (
-            <img
-              className="w-100"
-              key={index}
-              src={url}
-              alt={`Image ${index}`}
-            />
+            <div className="col-12 col-md-6 col-lg-6 mb-3">
+              <img
+                className="w-100 rounded-4"
+                key={index}
+                src={url}
+                alt={`Image ${index}`}
+              />
+            </div>
           ))}
         </div>
       )}
-    </>
+    </div>
   );
 }
 
-export default SSC_Board_Result;
+export default Img_Gallary;

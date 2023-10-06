@@ -21,7 +21,7 @@ function Nav() {
     <>
       <div className="container p-0 rounded-4">
         <div className="navpadding rounded-4 ">
-          <div className="topnav rounded-4" id="myTopnav">
+          <div className="topnav rounded-4 p-2" id="myTopnav">
             <NavLink to="/" className="active_home">
               <FaHouseChimney className=" text-white  me-2 "></FaHouseChimney>
               হোম
@@ -40,6 +40,7 @@ function Nav() {
             <NavLink to="/scholarship">বৃত্তি , উপ-বৃত্তি </NavLink>
             <NavLink to="/meritorious-student">কৃতি শিক্ষার্থী </NavLink>
             <NavLink to="/approval"> অনুমোদন ও স্বীকৃতি</NavLink>
+            <NavLink to="/mpo">এমপিও ও জাতীয়করনের তথ্য</NavLink>
             <div className="dropdown1">
               <button className="dropbtn">
                 গ্যালারি
@@ -49,8 +50,8 @@ function Nav() {
                 ></BsCaretDownFill>
               </button>
               <div className="dropdown-content">
-                <NavLink to="./galary_img.html">ইমেজ </NavLink>
-                <NavLink to="./video_galary.html">ভিডিও </NavLink>
+                <NavLink to="/img-gallary">ইমেজ </NavLink>
+                <NavLink to="/video-gallary">ভিডিও </NavLink>
               </div>
             </div>
             <div className="dropdown1">
@@ -62,9 +63,9 @@ function Nav() {
                 ></BsCaretDownFill>
               </button>
               <div className="dropdown-content">
-                <NavLink to="./Suborno_Speak.html">বার্তা </NavLink>
-                <NavLink to="./Suborn_img.html">ছবি গ্যালারি</NavLink>
-                <NavLink to="./Suborno_video.html">ভিডিও</NavLink>
+                <NavLink to="/subarna-jayanthi-speak">বার্তা </NavLink>
+                <NavLink to="/subarna-jayanthi-img">ছবি গ্যালারি</NavLink>
+                <NavLink to="/subarna-jayanthi-video">ভিডিও</NavLink>
               </div>
             </div>
 
@@ -77,10 +78,9 @@ function Nav() {
                 ></BsCaretDownFill>
               </button>
               <div className="dropdown-content">
-                <NavLink to="./index.html">অবদান</NavLink>
-                <NavLink to="./index.html">ম্যাগাজিন</NavLink>
-                <NavLink to="./index.html"> রক্ত দান</NavLink>
-                <NavLink to="/mpo">এমপিও ও জাতীয়করনের তথ্য</NavLink>
+                <NavLink to="/contribution">অবদান</NavLink>
+                <NavLink to="/magazine">ম্যাগাজিন</NavLink>
+                <NavLink to="/blood-donation"> রক্ত দান</NavLink>
               </div>
             </div>
             <NavLink

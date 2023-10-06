@@ -23,7 +23,7 @@ const Carousel = ({ items }) => {
 
   // Auto-play the carousel
   useEffect(() => {
-    const interval = setInterval(nextSlide, 7000); // Change slide every 7 seconds
+    const interval = setInterval(nextSlide, 4000); // Change slide every 7 seconds
 
     // Clear the interval when component unmounts
     return () => clearInterval(interval);
@@ -52,7 +52,7 @@ const Carousel = ({ items }) => {
         >
           &#60;
         </button>
-        <div className="carousel-content">
+        <div className="carousel-content rounded-4">
           {items.map((item, index) => (
             <div
               key={index}

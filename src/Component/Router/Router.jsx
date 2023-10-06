@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-import Main from "../../Layout/Main";
+import Main from "../../Layout/Main/Main";
 import Home from "../Home/Home";
 import Result from "../Result/Result";
 import Notice from "../Notice/Notice";
@@ -14,6 +14,13 @@ import School_Intro from "../School_Intro/School_Intro";
 import Teachers_Worker from "../Teachers_Worker/Teachers_Worker";
 import Committee from "../Committee/Committee";
 import SSC_Board_Result from "../SSC_Board_Result/SSC_Board_Result";
+import Others from "../../Layout/Others/Others";
+import Img_Gallary from "../Img_Gallary/Img_Gallary";
+import Video_Gallery from "../Video_Gallery/Video_Gallery";
+import Subarna_Jayanthi_Img from "../Subarna_Jayanthi_Img/Subarna_Jayanthi_Img";
+import Subarna_Jayanthi_Video from "../Subarna_Jayanthi_Video/Subarna_Jayanthi_Video";
+import Subarna_Jayanthi_Speak from "../Subarna_Jayanthi_Speak/Subarna_Jayanthi_Speak";
+import Nothing from "../Nothing/Nothing";
 
 const router = createBrowserRouter([
   {
@@ -74,6 +81,36 @@ const router = createBrowserRouter([
         path: "/committee",
         element: <Committee></Committee>,
       },
+      {
+        path: "/img-gallary",
+        element: <Img_Gallary></Img_Gallary>,
+      },
+      {
+        path: "/video-gallary",
+        element: <Video_Gallery></Video_Gallery>,
+      },
+      {
+        path: "/subarna-jayanthi-img",
+        element: <Subarna_Jayanthi_Img></Subarna_Jayanthi_Img>,
+      },
+      {
+        path: "/subarna-jayanthi-video",
+        element: <Subarna_Jayanthi_Video></Subarna_Jayanthi_Video>,
+      },
+      {
+        path: "/subarna-jayanthi-speak",
+        element: <Subarna_Jayanthi_Speak></Subarna_Jayanthi_Speak>,
+      },
+      {
+        path: "*",
+        element: <Nothing></Nothing>,
+      },
+    ],
+  },
+  {
+    path: "/ssc-board-result",
+    element: <Others></Others>,
+    children: [
       {
         path: "/ssc-board-result",
         element: <SSC_Board_Result></SSC_Board_Result>,

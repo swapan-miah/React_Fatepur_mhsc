@@ -93,8 +93,9 @@ function Home() {
       <div id="main_section" className="main_section container mt-3">
         <div className="row">
           {/* <!-- left section start --> */}
-          <div className="main_left_side col-12 col-md-8 col-lg-8 col-xxl-9">
+          <div className="main_left_side col-12 col-md-8 col-lg-8 col-xxl-9 ">
             {/* <!-- carousel section start  --> */}
+
             <Carousel items={items} />
 
             {/* <!-- carousel section end  --> */}
