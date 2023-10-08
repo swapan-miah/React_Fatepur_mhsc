@@ -22,7 +22,7 @@ function Nav() {
       <div className="container p-0 rounded-4">
         <div className="navpadding rounded-4 ">
           <div className="topnav rounded-4 p-2" id="myTopnav">
-            <NavLink to="/" className="active_home">
+            <NavLink to="/">
               <FaHouseChimney className=" text-white  me-2 "></FaHouseChimney>
               হোম
             </NavLink>
@@ -50,7 +50,7 @@ function Nav() {
                 ></BsCaretDownFill>
               </button>
               <div className="dropdown-content">
-                <NavLink to="/img-gallary">ইমেজ </NavLink>
+                <NavLink to="/img-gallary">ছবি </NavLink>
                 <NavLink to="/video-gallary">ভিডিও </NavLink>
               </div>
             </div>
@@ -64,7 +64,7 @@ function Nav() {
               </button>
               <div className="dropdown-content">
                 <NavLink to="/subarna-jayanthi-speak">বার্তা </NavLink>
-                <NavLink to="/subarna-jayanthi-img">ছবি গ্যালারি</NavLink>
+                <NavLink to="/subarna-jayanthi-img">ছবি </NavLink>
                 <NavLink to="/subarna-jayanthi-video">ভিডিও</NavLink>
               </div>
             </div>
@@ -83,14 +83,13 @@ function Nav() {
                 <NavLink to="/blood-donation"> রক্ত দান</NavLink>
               </div>
             </div>
-            <NavLink
-              to=""
+            <a
               style={{ fontSize: "15px" }}
               className="icon"
               onClick={myFunction}
             >
               &#9776;
-            </NavLink>
+            </a>
           </div>
         </div>
       </div>

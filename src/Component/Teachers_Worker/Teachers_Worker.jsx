@@ -172,21 +172,25 @@ function Teachers_Worker() {
   return (
     <>
       <div className="container mt-3">
-        <div ClassName="row justify-content-center">
+        <div className="row justify-content-center">
           {teachers_Worker_data.map((person, index) => (
-            <div key={index} ClassName="col-12 col-md-4 col-lg-3">
-              <div ClassName="teachers_card card text-center mb-3">
-                <img
-                  ClassName="card-img-top"
-                  src={person.img}
-                  alt={`person ${index + 1}`}
-                />
-                <div ClassName="card-body">
-                  <div ClassName="teacher_name fs-5">{person.name}</div>
-                  <div ClassName="teacher-education">{person.edu}</div>
-                  <div ClassName="teacher-title">{person.title}</div>
-                  <div ClassName="teacher-sub">{person.sub}</div>
-                  <div ClassName="teacher-mobile">{person.mob}</div>
+            <div key={index} className="col-12 col-md-4 col-lg-3">
+              <div className="teachers_card card text-center mb-3">
+                <div className="row">
+                  <div className="col-12">
+                    <img
+                      className="card-img-top img-fluid"
+                      src={person.img}
+                      alt={`person ${index + 1}`}
+                    />
+                  </div>
+                </div>
+                <div className="card-body">
+                  <div className="teacher_name fs-5">{person.name}</div>
+                  <div className="teacher-education">{person.edu}</div>
+                  <div className="teacher-title">{person.title}</div>
+                  <div className="teacher-sub">{person.sub}</div>
+                  <div className="teacher-mobile">{person.mob}</div>
                 </div>
               </div>
             </div>

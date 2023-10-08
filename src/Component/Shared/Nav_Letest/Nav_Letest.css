@@ -1,0 +1,11 @@
+.active {
+  background-color: #0a0c97 !important; /*Home Active   background Color Change   */
+  color: #fbfbfb !important;
+  border-radius: 16px;
+}
+
+.nav_bg_color {
+  background-color: var(
+    --main-bg-color
+  ); /*Navigation  background Color Change   */
+}
