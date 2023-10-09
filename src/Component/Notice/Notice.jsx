@@ -66,7 +66,7 @@ function Notice() {
       ) : (
         <div className="pdf_Table_section ">
           <table className="">
-            <tbody>
+            <thead>
               <tr>
                 <td className="first_th fw-bold text-center  ">Id</td>
                 <td className="second_th fw-bold text-center   ">Date</td>
@@ -74,7 +74,8 @@ function Notice() {
                 <td className="third_th fw-bold text-center   ">File Name</td>
                 <td className="fourth_th fw-bold "> </td>
               </tr>
-
+            </thead>
+            <tbody>
               {pdfFiles.map((file, index) => (
                 <tr key={index}>
                   <td className="first_td">{file.fileId}</td>
