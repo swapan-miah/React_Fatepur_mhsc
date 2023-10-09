@@ -7,11 +7,26 @@ import { BsHouseFill } from "react-icons/bs";
 import { BsCaretDownFill } from "react-icons/bs";
 import { Link, NavLink } from "react-router-dom";
 
+// const dropbtn_galary = document.querySelector(".dropbtn_galary");
+// const dropbtn_galary_item = document.querySelector(".dropbtn_galary_item");
+// dropbtn_galary_item.classList.contains("active")
+//   ? dropbtn_galary.classList.add("active")
+//   : dropbtn_galary.classList.remove("active");
+
 function Nav() {
   function myFunction() {
     console.log("click myFunction");
     var list = document.getElementById("myTopnav").classList;
     list.toggle("responsive");
+  }
+  function activeDrop_myFunction() {
+    console.log("pls add color dropdown");
+    const dropbtn_galary_item = document.querySelectorAll(
+      "dropbtn_galary_item"
+    );
+    const hasClass = dropbtn_galary_item.classList.contains("active");
+    console.log(hasClass);
+    myFunction();
   }
 
   return (
@@ -76,7 +91,7 @@ function Nav() {
                 <NavLink
                   to="/img-gallary"
                   className="dropbtn_galary_item"
-                  onClick={myFunction}
+                  onClick={activeDrop_myFunction}
                 >
                   ছবি{" "}
                 </NavLink>

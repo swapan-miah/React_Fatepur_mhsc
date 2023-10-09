@@ -32,7 +32,7 @@ function Footer() {
                   <a href="" target="_blank">
                     <FaFacebook className="text-white "></FaFacebook>
                   </a>
-                  <a href="./index.html">
+                  <a href="">
                     <FaYoutube className="text-white"></FaYoutube>
                   </a>
                 </div>

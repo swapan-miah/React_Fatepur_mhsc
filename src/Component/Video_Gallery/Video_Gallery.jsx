@@ -38,7 +38,6 @@ function Video_Gallery() {
 
   return (
     <div className="container mt-3">
-      hfhfjko
       {loading ? (
         <div>
           <p className="fs-4 text-center bg-primary my-5 mx-auto text-white loading-animation">
