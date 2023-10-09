@@ -12,7 +12,7 @@ function Footer() {
   return (
     <>
       <div className="footer-content container">
-        <div className="row p-3 mb-3">
+        <div className="row p-3 mb-3 ">
           <div className="col-12 col-md-4 col-lg-4">
             <div className="footer-column1 text-center">
               <h3 className="" style={{ fontWeight: "bolder" }}>
@@ -48,7 +48,7 @@ function Footer() {
                 height="140px"
                 width="140px"
               />
-              <p className="text-center" id="copyRight">
+              <p className="text-center pt-5 pt-md-0" id="copyRight">
                 Copyright @ 2023 Fatepur Moynal Haque School & College. All
                 Right Reserved
               </p>
@@ -56,7 +56,7 @@ function Footer() {
           </div>
           <div className="col-12 col-md-4 col-lg-4">
             <div className="footer-column3 text-center">
-              <h3 style={{ fontWeight: "bolder" }} className="pt-sm-3 pt-md-0">
+              <h3 style={{ fontWeight: "bolder" }} className="pt-5 pt-md-0">
                 LINKS
               </h3>
               <p>
@@ -83,7 +83,7 @@ function Footer() {
                 </a>
               </p>
 
-              <h5 className="pt-3">
+              <p className="pt-5 pt-md-3">
                 Design, Developed and Maintained by <br />
                 Jahid Computer's & Training Center
                 <div className="footer-social-links pt-2">
@@ -97,7 +97,7 @@ function Footer() {
                     <FaFacebook className="text-white "></FaFacebook>
                   </a>
                 </div>
-              </h5>
+              </p>
             </div>
           </div>
         </div>

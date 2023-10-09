@@ -13,6 +13,19 @@ function Nav() {
     var list = document.getElementById("myTopnav").classList;
     list.toggle("responsive");
   }
+
+  const dropbtn_galary = document.getElementsByClassName("dropbtn_galary");
+  const dropbtn_galary_item = document.querySelectorAll(".dropbtn_galary_item");
+
+  const dropbtn_su_joyonti =
+    document.getElementsByClassName("dropbtn_su_joyonti");
+  const dropbtn_others = document.getElementsByClassName("dropbtn_others");
+
+  // if (dropbtn_galary_item.classList.contains("active")) {
+  //   dropbtn_galary.classList.add("active");
+  // } else {
+  //   dropbtn_galary.classList.remove("active");
+  // }
   return (
     <>
       <div className="container p-0 rounded-4">
@@ -64,7 +77,7 @@ function Nav() {
               এমপিও ও জাতীয়করনের তথ্য
             </NavLink>
             <div className="dropdown1">
-              <button className="dropbtn">
+              <button className="dropbtn dropbtn_galary">
                 গ্যালারি
                 <BsCaretDownFill
                   className="text-white"
@@ -72,16 +85,24 @@ function Nav() {
                 ></BsCaretDownFill>
               </button>
               <div className="dropdown-content">
-                <NavLink to="/img-gallary" onClick={myFunction}>
+                <NavLink
+                  to="/img-gallary"
+                  className="dropbtn_galary_item"
+                  onClick={myFunction}
+                >
                   ছবি{" "}
                 </NavLink>
-                <NavLink to="/video-gallary" onClick={myFunction}>
+                <NavLink
+                  to="/video-gallary"
+                  className="dropbtn_galary_item"
+                  onClick={myFunction}
+                >
                   ভিডিও{" "}
                 </NavLink>
               </div>
             </div>
             <div className="dropdown1">
-              <button className="dropbtn">
+              <button className="dropbtn dropbtn_su_joyonti">
                 সুবর্ণজয়ন্তী কর্ণার
                 <BsCaretDownFill
                   className="text-white"
@@ -89,20 +110,32 @@ function Nav() {
                 ></BsCaretDownFill>
               </button>
               <div className="dropdown-content">
-                <NavLink to="/subarna-jayanthi-speak" onClick={myFunction}>
+                <NavLink
+                  to="/subarna-jayanthi-speak"
+                  className="dropbtn_su_joyonti_item"
+                  onClick={myFunction}
+                >
                   বার্তা{" "}
                 </NavLink>
-                <NavLink to="/subarna-jayanthi-img" onClick={myFunction}>
+                <NavLink
+                  to="/subarna-jayanthi-img"
+                  className="dropbtn_su_joyonti_item"
+                  onClick={myFunction}
+                >
                   ছবি{" "}
                 </NavLink>
-                <NavLink to="/subarna-jayanthi-video" onClick={myFunction}>
+                <NavLink
+                  to="/subarna-jayanthi-video"
+                  className="dropbtn_su_joyonti_item"
+                  onClick={myFunction}
+                >
                   ভিডিও
                 </NavLink>
               </div>
             </div>
 
             <div className="dropdown1">
-              <button className="dropbtn">
+              <button className="dropbtn dropbtn_others">
                 অন্যান্য তথ্য
                 <BsCaretDownFill
                   className="text-white"
@@ -110,9 +143,16 @@ function Nav() {
                 ></BsCaretDownFill>
               </button>
               <div className="dropdown-content">
-                <NavLink to="/contribution">অবদান</NavLink>
-                <NavLink to="/magazine">ম্যাগাজিন</NavLink>
-                <NavLink to="/blood-donation"> রক্ত দান</NavLink>
+                <NavLink to="/contribution" className="dropbtn_others_item">
+                  অবদান
+                </NavLink>
+                <NavLink to="/magazine" className="dropbtn_others_item">
+                  ম্যাগাজিন
+                </NavLink>
+                <NavLink to="/blood-donation" className="dropbtn_others_item">
+                  {" "}
+                  রক্ত দান
+                </NavLink>
               </div>
             </div>
             <a
