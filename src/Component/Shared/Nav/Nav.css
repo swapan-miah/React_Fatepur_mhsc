@@ -4,7 +4,7 @@
   border-radius: 16px !important;
 }
 .active {
-  background-color: #0a0c97 !important; /*Home Active   background Color Change   */
+  background-color: #d80343 !important; /*Home Active   background Color Change   */
   color: #fbfbfb !important;
   border-radius: 16px;
 }
@@ -43,7 +43,7 @@
 }
 .topnav a:hover,
 .dropdown1:hover .dropbtn {
-  background-color: #000980; /* Hover Navigation  background Color Change   */
+  background-color: #4e03d8; /* Hover Navigation  background Color Change   */
   color: var(
     --main-text-color
   ); /*Hover Navigation  Link  Text  color Change   */

@@ -6,6 +6,9 @@
   /* float: left; */
   /* width: 15%; */
 }
+.logu-left-content {
+  float: right;
+}
 .logu-left-content img {
   /* float: right; */
   margin-top: 26px;
