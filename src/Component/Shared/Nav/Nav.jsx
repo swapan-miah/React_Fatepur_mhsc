@@ -14,18 +14,6 @@ function Nav() {
     list.toggle("responsive");
   }
 
-  const dropbtn_galary = document.getElementsByClassName("dropbtn_galary");
-  const dropbtn_galary_item = document.querySelectorAll(".dropbtn_galary_item");
-
-  const dropbtn_su_joyonti =
-    document.getElementsByClassName("dropbtn_su_joyonti");
-  const dropbtn_others = document.getElementsByClassName("dropbtn_others");
-
-  // if (dropbtn_galary_item.classList.contains("active")) {
-  //   dropbtn_galary.classList.add("active");
-  // } else {
-  //   dropbtn_galary.classList.remove("active");
-  // }
   return (
     <>
       <div className="container p-0 rounded-4">
