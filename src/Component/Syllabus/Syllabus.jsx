@@ -64,7 +64,7 @@ function Syllabus() {
           Loading Data... {loadingPercentage.toFixed(2)}%
         </div>
       ) : (
-        <div className="pdf_Table_section ">
+        <div className="pdf_Table_section">
           <table className="">
             <thead>
               <tr>

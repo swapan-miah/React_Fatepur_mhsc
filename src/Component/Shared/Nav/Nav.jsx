@@ -18,15 +18,39 @@ function Nav() {
     console.log("click myFunction");
     var list = document.getElementById("myTopnav").classList;
     list.toggle("responsive");
-  }
-  function activeDrop_myFunction() {
-    console.log("pls add color dropdown");
-    const dropbtn_galary_item = document.querySelectorAll(
-      "dropbtn_galary_item"
+
+    //dropdown gallery button remove active class
+    const dropbtn_galary = document.querySelector(".dropbtn_galary");
+    dropbtn_galary.classList.remove("active");
+    //dropdown Suborno_Joyonti button remove active class
+    const dropbtn_su_joyonti = document.querySelector(".dropbtn_su_joyonti");
+    dropbtn_su_joyonti.classList.remove("active");
+    //dropdown Others button remove active class
+    const dropbtn_othersdropbtn_others = document.querySelector(
+      ".dropbtn_othersdropbtn_others"
     );
-    const hasClass = dropbtn_galary_item.classList.contains("active");
-    console.log(hasClass);
+    dropbtn_othersdropbtn_others.classList.remove("active");
+  }
+  function activeGallery_myFunction() {
     myFunction();
+    console.log("pls add color dropdown");
+    const dropbtn_galary = document.querySelector(".dropbtn_galary");
+    dropbtn_galary.classList.add("active");
+    console.log(dropbtn_galary.classList.add("active"));
+  }
+  function activeSuboro_myFunction() {
+    myFunction();
+    console.log("pls add color dropdown");
+    const dropbtn_su_joyonti = document.querySelector(".dropbtn_su_joyonti");
+    dropbtn_su_joyonti.classList.add("active");
+    console.log(dropbtn_su_joyonti.classList.add("active"));
+  }
+  function activeOthers_myFunction() {
+    myFunction();
+    console.log("pls add color dropdown");
+    const dropbtn_others = document.querySelector(".dropbtn_others");
+    dropbtn_others.classList.add("active");
+    console.log(dropbtn_others.classList.add("active"));
   }
 
   return (
@@ -91,14 +115,14 @@ function Nav() {
                 <NavLink
                   to="/img-gallary"
                   className="dropbtn_galary_item"
-                  onClick={activeDrop_myFunction}
+                  onClick={activeGallery_myFunction}
                 >
                   ছবি{" "}
                 </NavLink>
                 <NavLink
                   to="/video-gallary"
                   className="dropbtn_galary_item"
-                  onClick={myFunction}
+                  onClick={activeGallery_myFunction}
                 >
                   ভিডিও{" "}
                 </NavLink>
@@ -116,21 +140,21 @@ function Nav() {
                 <NavLink
                   to="/subarna-jayanthi-speak"
                   className="dropbtn_su_joyonti_item"
-                  onClick={myFunction}
+                  onClick={activeSuboro_myFunction}
                 >
                   বার্তা{" "}
                 </NavLink>
                 <NavLink
                   to="/subarna-jayanthi-img"
                   className="dropbtn_su_joyonti_item"
-                  onClick={myFunction}
+                  onClick={activeSuboro_myFunction}
                 >
                   ছবি{" "}
                 </NavLink>
                 <NavLink
                   to="/subarna-jayanthi-video"
                   className="dropbtn_su_joyonti_item"
-                  onClick={myFunction}
+                  onClick={activeSuboro_myFunction}
                 >
                   ভিডিও
                 </NavLink>
@@ -146,13 +170,25 @@ function Nav() {
                 ></BsCaretDownFill>
               </button>
               <div className="dropdown-content">
-                <NavLink to="/contribution" className="dropbtn_others_item">
+                <NavLink
+                  to="/contribution"
+                  className="dropbtn_others_item"
+                  onClick={activeOthers_myFunction}
+                >
                   অবদান
                 </NavLink>
-                <NavLink to="/magazine" className="dropbtn_others_item">
+                <NavLink
+                  to="/magazine"
+                  className="dropbtn_others_item"
+                  onClick={activeOthers_myFunction}
+                >
                   ম্যাগাজিন
                 </NavLink>
-                <NavLink to="/blood-donation" className="dropbtn_others_item">
+                <NavLink
+                  to="/blood-donation"
+                  className="dropbtn_others_item"
+                  onClick={activeOthers_myFunction}
+                >
                   {" "}
                   রক্ত দান
                 </NavLink>
