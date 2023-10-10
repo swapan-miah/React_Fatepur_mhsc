@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Nav.css";
 // icon
 import { FaFacebook } from "react-icons/fa6";
@@ -14,22 +14,30 @@ import { Link, NavLink } from "react-router-dom";
 //   : dropbtn_galary.classList.remove("active");
 
 function Nav() {
+  const [galleryBtnActive, setGalleryBtnActive] = useState(false);
+  const [subornoBtnActive, setSubornoBtnActive] = useState(false);
+  const [othersBtnActive, setOthersBtnActive] = useState(false);
   function myFunction() {
     console.log("click myFunction");
     var list = document.getElementById("myTopnav").classList;
     list.toggle("responsive");
+    setGalleryBtnActive(false);
+    setSubornoBtnActive(false);
+    setOthersBtnActive(false);
 
     //dropdown gallery button remove active class
-    const dropbtn_galary = document.querySelector(".dropbtn_galary");
-    dropbtn_galary.classList.remove("active");
+    // const dropbtn_galary = document.querySelector(".dropbtn_galary");
+    // dropbtn_galary.classList.remove("active");
+
     //dropdown Suborno_Joyonti button remove active class
-    const dropbtn_su_joyonti = document.querySelector(".dropbtn_su_joyonti");
-    dropbtn_su_joyonti.classList.remove("active");
+    // const dropbtn_su_joyonti = document.querySelector(".dropbtn_su_joyonti");
+    // dropbtn_su_joyonti.classList.remove("active");
+
     //dropdown Others button remove active class
-    const dropbtn_othersdropbtn_others = document.querySelector(
-      ".dropbtn_othersdropbtn_others"
-    );
-    dropbtn_othersdropbtn_others.classList.remove("active");
+    // const dropbtn_othersdropbtn_others = document.querySelector(
+    //   ".dropbtn_othersdropbtn_others"
+    // );
+    // dropbtn_othersdropbtn_others.classList.remove("active");
   }
   function activeGallery_myFunction() {
     myFunction();
