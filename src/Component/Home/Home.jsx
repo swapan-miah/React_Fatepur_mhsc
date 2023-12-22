@@ -4,6 +4,7 @@ import "./Home.css";
 import Carousel from "../Carousel/Carousel";
 
 // img import
+import is_chairman from "../../assets/is_chearman.png";
 import chairman_img from "../../assets/Chairman.jpg";
 import HeadTeacher_img from "../../assets/HeadTeacher.jpg";
 import HelpLineDesktop from "../../assets/HelplineDeskt.jpg";
@@ -199,7 +200,7 @@ function Home() {
                 className="panel-footer py-2 text-center font-weight-bold fs-6"
                 // style={{ fontSize: "16px" }}
               >
-                #########
+                শাহ্ মাজমুল হক মাসুম (চাঁনময়না)
                 <br />
                 সভাপতি, ফতেপুর ময়নাল হক স্কুল এন্ড কলেজ
               </div>
@@ -254,6 +255,27 @@ function Home() {
               </div>
             </div>
             {/* <!-- notice_bord end  --> */}
+            {/* <!-- Istablish chairmanIntro start  --> */}
+            <div className="panel panel-primary mb-4">
+              <div className="panel-heading-color">
+                &nbsp; প্রতিষ্ঠাতা সভাপতি
+              </div>
+              <div className="panel-body bg-white">
+                <img
+                  src={is_chairman}
+                  alt="Image"
+                  className="teacher-image chairman_Home_img"
+                />
+              </div>
+              <div
+                className="panel-footer text-center p-2 bg-white fs-6"
+                // style={{ fontSize: "16px" }}
+              >
+                মৃত্য দানবীর শাহ্ ফজলুল হক (নন্দন মিয়া) <br /> জন্মঃ ১৯০১ ইং
+                মৃত্যুঃ ১৯৭৭ ইং
+              </div>
+            </div>
+            {/* <!-- chairmanIntro end  --> */}
             {/* <!-- chairmanIntro start  --> */}
             <div className="panel panel-primary mb-4">
               <div className="panel-heading-color">&nbsp; সভাপতি</div>
@@ -268,7 +290,7 @@ function Home() {
                 className="panel-footer text-center p-2 bg-white fs-6"
                 // style={{ fontSize: "16px" }}
               >
-                #########
+                শাহ্ মাজমুল হক মাসুম (চাঁনময়না)
               </div>
             </div>
             {/* <!-- chairmanIntro end  --> */}

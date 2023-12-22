@@ -7,12 +7,6 @@ import { BsHouseFill } from "react-icons/bs";
 import { BsCaretDownFill } from "react-icons/bs";
 import { Link, NavLink } from "react-router-dom";
 
-// const dropbtn_galary = document.querySelector(".dropbtn_galary");
-// const dropbtn_galary_item = document.querySelector(".dropbtn_galary_item");
-// dropbtn_galary_item.classList.contains("active")
-//   ? dropbtn_galary.classList.add("active")
-//   : dropbtn_galary.classList.remove("active");
-
 function Nav() {
   const [galleryBtnActive, setGalleryBtnActive] = useState(false);
   const [subornoBtnActive, setSubornoBtnActive] = useState(false);
@@ -24,20 +18,6 @@ function Nav() {
     setGalleryBtnActive(false);
     setSubornoBtnActive(false);
     setOthersBtnActive(false);
-
-    //dropdown gallery button remove active class
-    // const dropbtn_galary = document.querySelector(".dropbtn_galary");
-    // dropbtn_galary.classList.remove("active");
-
-    //dropdown Suborno_Joyonti button remove active class
-    // const dropbtn_su_joyonti = document.querySelector(".dropbtn_su_joyonti");
-    // dropbtn_su_joyonti.classList.remove("active");
-
-    //dropdown Others button remove active class
-    // const dropbtn_othersdropbtn_others = document.querySelector(
-    //   ".dropbtn_othersdropbtn_others"
-    // );
-    // dropbtn_othersdropbtn_others.classList.remove("active");
   }
   function activeGallery_myFunction() {
     myFunction();
@@ -66,7 +46,7 @@ function Nav() {
       <div className="container p-0 rounded-4">
         <div className="navpadding rounded-4 ">
           <div className="topnav rounded-4 p-2" id="myTopnav">
-            <NavLink to="/">
+            <NavLink to="/" onClick={myFunction}>
               <FaHouseChimney className=" text-white  me-2 pb-1 pb-md-0 "></FaHouseChimney>
               হোম
             </NavLink>

@@ -7,6 +7,7 @@ import { FaFacebook } from "react-icons/fa6";
 import { FaYoutube } from "react-icons/fa";
 import { BsTelephone } from "react-icons/bs";
 import { BsEnvelopeAt } from "react-icons/bs";
+import { PiGoogleChromeLogoLight } from "react-icons/pi";
 
 function Footer() {
   return (
@@ -85,7 +86,7 @@ function Footer() {
 
               <p className="pt-5 pt-md-3">
                 Design, Developed and Maintained by <br />
-                Jahid Computer's & Training Center
+                Jahid Computer's
                 <div className="footer-social-links pt-2">
                   <a
                     href="https://www.facebook.com/groups/513112963035467"
@@ -93,8 +94,8 @@ function Footer() {
                   >
                     <FaFacebook className="text-white "></FaFacebook>
                   </a>
-                  <a href="https://www.facebook.com/jctcit" target="_blank">
-                    <FaFacebook className="text-white "></FaFacebook>
+                  <a href="https://jahidcomputers.com/" target="_blank">
+                    <PiGoogleChromeLogoLight className="text-white "></PiGoogleChromeLogoLight>
                   </a>
                 </div>
               </p>
